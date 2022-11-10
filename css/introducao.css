@@ -60,7 +60,7 @@
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
   }
   .introducao h1 {
@@ -71,6 +71,9 @@
     width: 30px;
     height: 10px;
     left: 0px;
+  }
+  .introducao .foto-perfil {
+    display: none;
   }
 }
 
