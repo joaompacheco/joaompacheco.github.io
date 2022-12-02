@@ -18,6 +18,11 @@
   line-height: 1.33;
 }
 
+.contact-description strong {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
 .linkedin-link {
   display: flex;
   gap: 20px;
@@ -95,10 +100,10 @@
     gap: 40px;
   }
   .contato a {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .contato span {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 }

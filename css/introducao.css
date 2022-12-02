@@ -9,8 +9,8 @@
 }
 
 .introducao .foto-perfil {
-  max-width: 70%;
-  max-height: 60%;
+  width: 100%;
+  max-height: 80%;
 }
 
 .introducao h1 {
@@ -34,7 +34,7 @@
 
 .introducao .foto-perfil {
   border-radius: 8px;
-  border: 2px solid #302d33;
+  box-shadow: 6px 6px 19px -5px rgba(0, 0, 0, 0.61);
 }
 
 .localizacao {
@@ -47,20 +47,20 @@
   color: #525252;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .introducao h1 {
     font-size: 3rem;
   }
 
   .introducao .foto-perfil {
-    max-width: 90%;
-    max-height: auto;
+    max-width: 100%;
+    max-height: 70%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .introducao {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
   .introducao h1 {
@@ -73,11 +73,12 @@
     left: 0px;
   }
   .introducao .foto-perfil {
-    display: none;
+    width: 80%;
+    max-height: 60%;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .introducao {
     grid-template-columns: 1fr;
   }
