@@ -1,0 +1,92 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao .foto-perfil {
+  width: 100%;
+  max-height: 80%;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introducao .foto-perfil {
+  border-radius: 8px;
+  box-shadow: 6px 6px 19px -5px rgba(0, 0, 0, 0.61);
+}
+
+.localizacao {
+  display: flex;
+  gap: 10px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1024px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .introducao .foto-perfil {
+    max-width: 100%;
+    max-height: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  .introducao .foto-perfil {
+    width: 80%;
+    max-height: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao .foto-perfil {
+    display: none;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+  }
+}
