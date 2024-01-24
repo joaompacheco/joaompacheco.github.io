@@ -25,7 +25,7 @@
 
 .formacao .subtitulo {
   color: #000;
-  max-width: 5ch;
+  max-width: 4ch;
 }
 
 .formacao-texto {
@@ -126,6 +126,37 @@
   color: #8f8f8f;
 }
 
+.saiba-mais a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.saiba-mais a:hover {
+  color: #000;
+  background-color: #8f8f8f;
+}
+
+.habilidades-usadas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.habilidades-usadas li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  color: #000;
+  background: #f5f5f5;
+  padding: 5px 10px;
+}
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
