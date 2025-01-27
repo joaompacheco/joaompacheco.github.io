@@ -1,0 +1,109 @@
+.footer {
+  background: #000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 160px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.contact-description {
+  color: #cccccc;
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.contact-description strong {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+.linkedin-link {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.linkedin-link a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.linkedin-link a:hover {
+  color: #8f8f8f;
+}
+
+.github-link {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.github-link a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.github-link a:hover {
+  color: #8f8f8f;
+}
+
+.whatsapp-link {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.whatsapp-link a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.whatsapp-link a:hover {
+  color: #8f8f8f;
+}
+
+.email-link {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.email-contact {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.direitos-reservados {
+  color: #8f8f8f;
+  font-size: 1, 125rem;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contato a {
+    font-size: 1.125rem;
+  }
+
+  .contato span {
+    font-size: 1.125rem;
+  }
+}
